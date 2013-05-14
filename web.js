@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 app.use(express.logger());
 
+app.use(express.static("./static"));
 app.use("/bootstrap", express.static("./bootstrap"));
 
 app.get('/', function(request, response) {
