@@ -30,7 +30,4 @@ iframe {
 
 .moviethumb img:hover, .moviethumb img:focus {
 	border-color: white;
-	-webkit-box-shadow: 0 0px 13px whitesmoke;
-	-moz-box-shadow: 0 0px 13px whitesmoke;
-	box-shadow: 0 0px 13px whitesmoke;
 }
