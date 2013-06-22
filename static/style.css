@@ -1,5 +1,4 @@
-body
-{
+body {
 	background-color: black;
 	font-family: 'Muli', sans-serif;
 	font-size: 9pt;
@@ -7,26 +6,31 @@ body
 	color: white;
 }
 
-.logo
-{
+.logo {
 	margin-bottom: 10px;
 }
 
-.container{
+.container {
 	padding: 60px 0px;
 }
 
-.row .moviethumb{
+iframe {
+	padding: 0px;
+	/*border: 1px solid grey;*/
+}
+
+.row .movie {
 	margin: 10px 0px;
 }
 
-.img-polaroid {
+.moviethumb img {
 	padding: 0px;
 	border: 1px solid grey;
 }
 
-iframe
-{
-	padding: 0px;
-	/*border: 1px solid grey;*/
+.moviethumb img:hover, .moviethumb img:focus {
+	border-color: white;
+	-webkit-box-shadow: 0 0px 13px whitesmoke;
+	-moz-box-shadow: 0 0px 13px whitesmoke;
+	box-shadow: 0 0px 13px whitesmoke;
 }

@@ -12,53 +12,59 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-          <div id="movie3" hidden>
-            <iframe src="http://player.vimeo.com/video/67062426" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-          </div>
-          <div id="movie2">
-            <iframe src="http://player.vimeo.com/video/68564079" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-          </div>
-          <div id="movie3" hidden>
-            <iframe src="http://player.vimeo.com/video/68115302" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <div style="height:422px;">
+            <div id="movie1" class="movieplayer">
+              <!-- Escort -->
+              <iframe src="http://player.vimeo.com/video/67062426" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            <div id="movie2" class="movieplayer" style="display: none;">
+              <!-- Tag Stilling -->
+              <iframe src="http://player.vimeo.com/video/68564079" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            <div id="movie3" class="movieplayer" style="display: none;">
+              <!-- Sne -->
+              <iframe src="http://player.vimeo.com/video/68115302" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
           </div>
           <img class="logo" src="Balthazar_navn.gif" />
         </div>
       </div>
       <div class="row">
         <div class="span4">
-          <div class="moviethumb">
-            <a href="#"><img src="Escort.jpg" class="img-polaroid" /></a>
-            <p>ESCORT · AFGANGSFILM</p>
+          <div class="movie">
+            <a href="#" class="moviethumb" onclick="showmovie('#movie1');"><img src="Escort.jpg" /></a>
+            <p onclick="showmovie('#movie1')">ESCORT · AFGANGSFILM</p>
           </div>
         </div>
         <div class="span4">
-          <div class="moviethumb">
-            <a href="#"><img src="mOOnbird.jpg" class="img-polaroid" /></a>
-            <p>m00n BIRD</p>
+          <div class="movie">
+            <a href="#" class="moviethumb" onclick="showmovie('#movie2');"><img src="TagStilling.jpg" /></a>
+            <p>TAG STILLING · AFGANGSFILM</p>
           </div>
         </div>
         <div class="span4">
-          <div class="moviethumb">
-            <a href="#"><img src="Sne.jpg" class="img-polaroid" /></a>
+          <div class="movie">
+            <a href="#" class="moviethumb" onclick="showmovie('#movie3');"><img src="Sne.jpg" /></a>
             <p>SNE · AFGANGSFILM</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="span4">
-          <div class="moviethumb">
-            <a href="#"><img src="Tabita.jpg" class="img-polaroid" /></a>
+          <div class="movie">
+            <img src="Tabita.jpg" class="moviethumb" />
             <p>TABITA · LANGFILM</p>
           </div>
         </div>
         <div class="span4">
-          <div class="moviethumb">
-            <a href="#"><img src="TagStilling.jpg" class="img-polaroid" /></a>
-            <p>TAG STILLING · AFGANGSFILM</p>
+          <div class="movie">
+            <img src="mOOnbird.jpg" class="moviethumb" />
+            <p>m00n BIRD</p>
           </div>
         </div>
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="page.js"></script>
   </body>
 </html>
