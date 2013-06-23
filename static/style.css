@@ -31,3 +31,10 @@ iframe {
 .moviethumb img:hover, .moviethumb img:focus {
 	border-color: white;
 }
+
+.movielabel {
+	height: 40px;
+}
+.movielabel p {
+	display: none;
+}

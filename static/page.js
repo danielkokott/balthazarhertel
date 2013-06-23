@@ -1,9 +1,19 @@
-function showmovie(id) {
-    $('.moviethumb').addClass('disabled');
+$(".moviethumb").click(function(e) {
+	if ($(this).attr("show") !== undefined) {
+		$(".movieplayer").hide();
+		$($(this).attr("show")).show();
+	}
+	else {
+		e.preventDefault();
+	}
 
-	$(".movieplayer[style!='display: none;']").fadeOut(100, function(){
-  		$(id).fadeIn("slow");
-  	});
+});
 
-    $('.moviethumb').removeClass('disabled');
-}
+$(".moviethumb").hover(
+	function() {
+		$(this).next(".movielabel").children("p").show();
+	},
+	function() {
+		$(this).next(".movielabel").children("p").hide();
+	}
+);
