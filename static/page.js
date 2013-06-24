@@ -1,6 +1,11 @@
 $(".moviethumb").click(function(e) {
 	if ($(this).attr("play") !== undefined) {
-		$("#movieplayer").attr("src",$(this).attr("play"));
+		if ($("#movieplayer").attr("src") != $(this).attr("play")) {
+			$("#movieplayer").attr("src",$(this).attr("play"));
+		}
+		else{
+			e.preventDefault();
+		}
 	}
 	else {
 		e.preventDefault();
