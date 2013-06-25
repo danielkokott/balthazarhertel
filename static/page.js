@@ -10,7 +10,6 @@ $(".moviethumb").click(function(e) {
 	else {
 		e.preventDefault();
 	}
-
 });
 
 $(".moviethumb").hover(
