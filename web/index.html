@@ -6,6 +6,8 @@
     <meta name="keywords" content="Filmfotograf, Fotograf, Film, Den Danske Filmskole">
     <meta name="author" content="Balthazar Hertel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qyH6ri3k2wFir_B_B6aK_V1JZ7Av_mafv44pfYtoQzk" />
+    <meta name="google-site-verification" content="YX5jEi0KiR9vGg-V1AgxtpWtYNHOjER-Mlh1EyDO-nQ" />
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link href="style.css" rel="stylesheet" media="screen">
@@ -16,43 +18,45 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-          <iframe id="movieplayer" src="http://player.vimeo.com/video/67062426" width="100%" height="700" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           <img class="logo" src="Balthazar_navn.gif" />
+<!--           <table>
+            <tr>
+              <td>
+                <div class="movie">
+                  <a data-play="http://player.vimeo.com/video/67062426" href="#movieplayer_modal" data-toggle="modal"><div class="moviethumb" data-src="Escort.jpg"></div></a>
+                </div>
+              </td>
+              <td>
+                <div class="movie">
+                  <a data-play="http://player.vimeo.com/video/68564079" href="#movieplayer_modal" data-toggle="modal"><div class="moviethumb" data-src="TagStilling.jpg"></div></a>
+                </div>
+              </td>
+              <td>
+                <div class="movie">
+                  <a data-play="http://player.vimeo.com/video/68115302" href="#movieplayer_modal" data-toggle="modal"><div class="moviethumb" data-src="Sne.jpg"></div></a>
+                </div>
+              </td>
+              <td>
+                <div class="movie">
+                  <a data-play="http://player.vimeo.com/video/69150324" href="#movieplayer_modal" data-toggle="modal"><div class="moviethumb" data-src="Tabita.jpg"></div></a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="movie">
+                  <a data-play="http://player.vimeo.com/video/68816773" href="#movieplayer_modal" data-toggle="modal"><div class="moviethumb" data-src="mOOnbird.jpg"></div></a>
+                </div>
+              </td>
+            </tr>
+          </table> -->
+          <img src="CreditsCV.gif" />
+          <img src="Top_adresse.gif" />
         </div>
       </div>
-      <div class="row">
-        <div class="span3">
-          <div class="movie">
-            <a class="moviethumb" play="http://player.vimeo.com/video/67062426"><img src="Escort.jpg" /></a>
-            <div class="movielabel"><p>ESCORT · AFGANGSFILM</p></div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="movie">
-            <a class="moviethumb" play="http://player.vimeo.com/video/68564079"><img src="TagStilling.jpg" /></a>
-            <div class="movielabel"><p>TAG STILLING · AFGANGSFILM</p></div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="movie">
-            <a class="moviethumb" play="http://player.vimeo.com/video/68115302"><img src="Sne.jpg" /></a>
-            <div class="movielabel"><p>SNE · AFGANGSFILM</p></div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="movie">
-            <img src="Tabita.jpg" class="moviethumb" />
-            <div class="movielabel"><p>TABITA · LANGFILM</p></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3">
-          <div class="movie">
-            <img src="mOOnbird.jpg" class="moviethumb" />
-            <div class="movielabel"><p>m00n BIRD</p></div>
-          </div>
-        </div>
+    </div>
+    <div id="movieplayer_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <iframe id="movieplayer" src="http://player.vimeo.com/video/67062426" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
