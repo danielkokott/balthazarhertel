@@ -19,15 +19,14 @@ iframe {
 	/*border: 1px solid grey;*/
 }
 
-.movie {
-	margin: 10px 0px;
+.movies td {
+	padding: 10px;
 }
 
 .moviethumb {
-	height: 281px;
-	width: 500px;
 	padding: 0px;
 	border: 1px solid grey;
+	
 }
 
 .moviethumb:hover, .moviethumb:focus {
@@ -40,22 +39,4 @@ iframe {
 
 #movieplayer {
 	display: :none;
-}
-
-.modal {
-	background-color: black;
-}
-
-.underbox {
-	position: absolute;
-	bottom:0;
-	height: 132px;
-	width: 228px;
-	background-position: 0 0;
-	cursor: pointer;
-	background-color: #000;
-}
-
-.underbox:hover {
-	background-position: -500px 0 !important;
 }

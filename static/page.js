@@ -1,25 +1,28 @@
-$(".moviethumb").click(function(e) {
+$(".movie").click(function(e) {
 	if ($(this).attr("data-play") !== undefined) {
-		if ($("#movieplayer").attr("src") != $(this).attr("data-play")) {
-			$("#movieplayer").attr("src",$(this).attr("data-play"));
+		if ($("#movieplayer iframe").attr("src") != $(this).attr("data-play")) {
+			$("#movieplayer iframe").attr("src",$(this).attr("data-play"));
 		}
-		else{
+		else {
 			e.preventDefault();
 		}
 	}
 	else {
 		e.preventDefault();
 	}
-
+	$("#movieplayer").slideDown(500);
 });
 
-$(".moviethumb").hover(
-	function() {
-		$(this).next(".movielabel").children("p").show();
-		$(this).prev(".movielabel").children("img").show();
-		console.log($(this).prev(".movielabel").children("img").attr("src"));
+$("#movieplay_close").click(function(e) {
+	$("#movieplayer").slideUp(500);
+});
+
+$("img.moviethumb").hover(
+	function(){
+		$(this).attr("data-src", $(this).attr("src"))
+		this.src = $(this).attr("data-hover");
 	},
-	function() {
-		$(this).next(".movielabel").children("p").hide();
+	function(){
+		this.src = $(this).attr("data-src");
 	}
 );
