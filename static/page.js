@@ -16,13 +16,3 @@ $(".movie").click(function(e) {
 $("#movieplay_close").click(function(e) {
 	$("#movieplayer").slideUp(500);
 });
-
-$("img.moviethumb").hover(
-	function(){
-		$(this).attr("data-src", $(this).attr("src"))
-		this.src = $(this).attr("data-hover");
-	},
-	function(){
-		this.src = $(this).attr("data-src");
-	}
-);
