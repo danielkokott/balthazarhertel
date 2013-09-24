@@ -23,7 +23,7 @@ iframe {
 }
 
 #movieplayer {
-	display: :none;
+	display: none;
 }
 
 .movie {
@@ -82,4 +82,20 @@ iframe {
 	top: 50%;
 	width: 100%;
 	text-align: center;
+}
+
+.test {
+	display: none;
+	font-size: 3.7vw;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+
+.test #titel {
+	font-size: 2.1vw;
+	text-decoration: underline;
+	/*font-variant: small-caps;*/
+	margin-right: 17px;
+	vertical-align: super;
+	letter-spacing: 1px;
 }
