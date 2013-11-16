@@ -1,11 +1,2 @@
-balthazarhertel
+www.balthazarhertel.com
 ==========
-
-Pre:
-npm install
-
-Run:
-foreman start
-
-Deploy:
-git push heroku master

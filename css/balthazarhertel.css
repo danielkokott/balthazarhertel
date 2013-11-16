@@ -1,9 +1,13 @@
-body {
+body{
 	background-color: black;
+	color: white;
+}
+
+body, h1, h2, h3 {
 	font-family: 'Source Code Pro', sans-serif;
 	font-size: 7pt;
 	letter-spacing: 3px;
-	color: white;
+	line-height: 1;
 }
 
 .logo {
@@ -98,4 +102,19 @@ iframe {
 	margin-right: 17px;
 	vertical-align: super;
 	letter-spacing: 1px;
+}
+
+#info {
+	margin-top: 200px;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: darkgray;
+    background-color: whitesmoke;
+    padding: 10px 40px;
+    letter-spacing: 2px;
+}
+
+#info a, a:hover, a:focus {
+	color: darkgrey;
 }
