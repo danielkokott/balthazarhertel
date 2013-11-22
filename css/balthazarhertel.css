@@ -104,17 +104,22 @@ iframe {
 	letter-spacing: 1px;
 }
 
+.incognito {
+	position: absolute;
+	left: 2000em;
+}
+
 #info {
 	margin-top: 200px;
-    font-style: italic;
+    font-style: normal;
     font-family: monospace;
     font-size: 1.2em;
-    color: darkgray;
-    background-color: whitesmoke;
+    color: black;
+    background-color: #222;
     padding: 10px 40px;
     letter-spacing: 2px;
 }
 
 #info a, a:hover, a:focus {
-	color: darkgrey;
+	color: black;
 }
