@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="qyH6ri3k2wFir_B_B6aK_V1JZ7Av_mafv44pfYtoQzk" />
     <meta name="google-site-verification" content="YX5jEi0KiR9vGg-V1AgxtpWtYNHOjER-Mlh1EyDO-nQ" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/balthazarhertel.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400|Muli' rel='stylesheet' type='text/css' />
     <!-- Made by Daniel Kokott, http://daniel.kokott.dk / daniel@kokott.dk -->
@@ -25,84 +25,114 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="span12">
+        <div class="col-xs-12">
           <img class="logo img-responsive" src="img/Balthazar_navn.gif" />
-          <div class="test"><span id="titel">FILMFOTOGRAF</span> BALTHAZAR HERTEL</div>
+          <div class="test">
+            <div id="navn"><span id="titel">FILMFOTOGRAF</span> BALTHAZAR HERTEL</div>
+          </div>
           <div id="movieplayer">
             <a id="movieplay_close" class="close" href="#">&times;</a>
             <iframe src="" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
-          <table class="movies">
-            <tr>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/67062426">
-                  <img class="moviethumb img-responsive" src="img/Escort.jpg" />
-                  <div class="movielabel">
-                    <h1>AFGANGSFILM</h1>
-                    <p>ESCORT</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/68564079">
-                  <img class="moviethumb img-responsive" src="img/TagStilling.jpg" />
-                  <div class="movielabel">
-                    <h1>REKLAMEFILM</h1>
-                    <p>TAG STILLING</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/68115302">
-                  <img class="moviethumb img-responsive" src="img/Sne.jpg" />
-                  <div class="movielabel">
-                    <h1>AFGANGSDOKUMENTAR</h1>
-                    <p>SNE</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/69150324">
-                  <img class="moviethumb img-responsive" src="img/Tabita.jpg" />
-                  <div class="movielabel">
-                    <h1>AFGANGSFILM</h1>
-                    <p>TABITA</p>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/68816773">
-                  <img class="moviethumb img-responsive" src="img/mOOnbird.jpg" />
-                  <div class="movielabel">
-                    <h1>MUSIKVIDEO</h1>
-                    <p>mOOnbird</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/74717033">
-                  <img class="moviethumb img-responsive" src="img/TAMV.jpg" />
-                  <div class="movielabel">
-                    <h1>SUPER16</h1>
-                    <p>TIL ALLE MINE VENNER</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="movie" data-play="http://player.vimeo.com/video/73302141">
-                  <img class="moviethumb img-responsive" src="img/Trold.jpg" />
-                  <div class="movielabel">
-                    <h1>KORTFILM</h1>
-                    <p>TROLD</p>
-                  </div>
-                </div>
-              </td>             
-            </tr>
-          </table>
+        </div>
+      </div>
+      <div class="row movierow">
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/67062426">
+            <img class="img-responsive" src="img/Escort.jpg" />
+            <div class="movielabel">
+              <h1>AFGANGSFILM</h1>
+              <p>ESCORT</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/68564079">
+            <img class="img-responsive" src="img/TagStilling.jpg" />
+            <div class="movielabel">
+              <h1>REKLAMEFILM</h1>
+              <p>TAG STILLING</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/68115302">
+            <img class="img-responsive" src="img/Sne.jpg" />
+            <div class="movielabel">
+              <h1>AFGANGSDOKUMENTAR</h1>
+              <p>SNE</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/69150324">
+            <img class="img-responsive" src="img/Tabita.jpg" />
+            <div class="movielabel">
+              <h1>AFGANGSFILM</h1>
+              <p>TABITA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row movierow">
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/68816773">
+            <img class="img-responsive" src="img/mOOnbird.jpg" />
+            <div class="movielabel">
+              <h1>MUSIKVIDEO</h1>
+              <p>mOOnbird</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/74717033">
+            <img class="img-responsive" src="img/TAMV.jpg" />
+            <div class="movielabel">
+              <h1>SUPER16</h1>
+              <p>TIL ALLE MINE VENNER</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movie" data-play="http://player.vimeo.com/video/73302141">
+            <img class="img-responsive" src="img/Trold.jpg" />
+            <div class="movielabel">
+              <h1>KORTFILM</h1>
+              <p>TROLD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <img class="img-responsive" src="img/CreditsCV.gif" />
           <!-- <img src="img/Top_adresse.gif" /> -->
+          <div class="test">
+            <div id="credits">
+              <p>2103 ESCORT (AFGANGSFILM) INST: JONAS GRUM SNE (AFGANGSFILM) INST: LAURITS FLENSTED TAG STILLING (REKLAMEFILM)</p>
+              <p>2012 TROLD (KORTFILM) INST: FILI SEIFERT A TERAM (KUNSTFILM) INST: BALTHAZAR HERTEL</p>
+              <p>2011 BALLADEN OM BOLETTE (KORTFILM) INST: PETER HAGELUND</p>
+              <p>TABITA (NOVELLEFILM) INST: JONAS GRUM ENGHAVE (MIDTVEJSDOKUMENTAR) INST: LAURITS FLENSTED</p>
+              <p>2010 BLINDVEJ (MIDTVEJSFILM) INST:KLAS MARKLUND TIL ALLE MINE VENNER (KORTFILM) INST: BEHROUZ BIGDELI</p>
+              <p>BENJA (KORTFILM) INST: PETER HAGELUND</p>
+              <p>2009 DINOSAURS WILL DIE (KORTFILM) INST: BEHROUZ BIGDELI</p>
+              <p>2008 EVIGT ELSKES KUN DET TABTE (KORTFILM) INST: PETER HAGELUND</p>
+              <p>SNOOZE (KORTFILM) INST: BEHROUZ BIGDELI MANDEN FRA PANAMA (KORTFILM) INST: SUNE ALBINUS</p>
+              <p>UDDANNELSE</p>
+              <p>2009 - 2013</p>
+              <p>DEN DANSKE FILMSKONE FILMFOTOGRAF</p>
+              <p>2009 - 2002</p>
+              <p>FREELANCE BELYSER</p>
+              <p>SPILLEFILM, REKLAME, TV SERIE.</p>
+              <p>2002 - 1999</p>
+              <p>TV2 LORRY - PRODUKTIONSSKOLE: LOKAL TV</p>
+              <p>KREATIVLINJE: TV PRODUKTION</p>
+              <p>TV OG FILM MEDARBEJDER UDDANNELSE I TEK 1</p>
+              <p>F&Oslash;DT 1981</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,7 +149,6 @@
         <span itemprop="addressLocality">Valby</span>,
         CVR <span itemprop="taxID">26370671</span>
       </div>
-      <div class="incognito">Web:<a href="http://www.balthazarhertel.com" itemprop="url">www.balthazarhertel.com</a></div>
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
