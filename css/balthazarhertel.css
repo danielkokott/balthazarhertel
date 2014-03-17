@@ -59,9 +59,9 @@ iframe {
     top: 0;
     left: 0;
     opacity: 0;
-	-webkit-transition: opacity 100ms linear;
-	-moz-transition: opacity 100ms linear;
-	transition: opacity 100ms linear;
+	-webkit-transition: opacity 200ms linear;
+	-moz-transition: opacity 200ms linear;
+	transition: opacity 200ms linear;
 }
 
 .movielabel:hover {
