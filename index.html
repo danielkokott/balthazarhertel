@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="balthazarhertel">
-    <head>
-        <title>Balthazar Hertel</title>
-        <meta name="description" content="Filmfotograf" />
-        <meta name="keywords" content="Filmfotograf, Fotograf, Film, Den Danske Filmskole" />
-        <meta name="author" content="Balthazar Hertel" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="qyH6ri3k2wFir_B_B6aK_V1JZ7Av_mafv44pfYtoQzk" />
-        <meta name="google-site-verification" content="YX5jEi0KiR9vGg-V1AgxtpWtYNHOjER-Mlh1EyDO-nQ" />
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <link href="css/balthazarhertel.css" rel="stylesheet" />
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400|Muli' rel='stylesheet' type='text/css' />
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-sanitize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
-        <!-- Made by Daniel Kokott, http://daniel.kokott.dk / daniel@kokott.dk -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<html lang="en">
+  <head>
+    <title>Balthazar Hertel</title>
+    <meta name="description" content="Filmfotograf" />
+    <meta name="keywords" content="Filmfotograf, Fotograf, Film, Den Danske Filmskole" />
+    <meta name="author" content="Balthazar Hertel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qyH6ri3k2wFir_B_B6aK_V1JZ7Av_mafv44pfYtoQzk" />
+    <meta name="google-site-verification" content="YX5jEi0KiR9vGg-V1AgxtpWtYNHOjER-Mlh1EyDO-nQ" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/balthazarhertel.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400|Muli' rel='stylesheet' type='text/css' />
+    <!-- Made by Daniel Kokott, http://daniel.kokott.dk / daniel@kokott.dk -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-45798050-1', 'balthazarhertel.com');
-          ga('send', 'pageview');
-        </script>
-    </head>
-    <body ng-controller="MovieCtrl">
-        <moviethumb></moviethumb>
-        <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <img class="logo img-responsive" src="img/Balthazar_navn.gif" />
+      ga('create', 'UA-45798050-1', 'balthazarhertel.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="logo img-responsive" src="img/Balthazar_navn.gif" />
           <div class="test">
             <div id="navn"><span id="titel">FILMFOTOGRAF</span> BALTHAZAR HERTEL</div>
           </div>
           <div id="movieplayer">
             <a id="movieplay_close" class="close" href="#">&times;</a>
-              <iframe src="" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe src="" width="100%" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
         </div>
       </div>
@@ -155,7 +151,7 @@
       </div>
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/balthazarhertel.js"></script>
   </body>
 </html>
